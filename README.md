@@ -1,2 +1,2 @@
 # Python-in-practice
- Some my practice in Python Language
+ Some my practices in Python Language
