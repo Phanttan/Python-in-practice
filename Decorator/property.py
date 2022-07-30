@@ -4,8 +4,6 @@ Created on Thu Jul 18 09:18:07 2019
 
 @author: Phan Thanh Tan
 """
-from simple_colors import *
-
 
 class Student:
     def __init__(self, name, marks):
