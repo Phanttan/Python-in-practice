@@ -6,10 +6,14 @@ class Music:
     def stop(self):
         print("stop playing")
 
+# Check dictionary 
+dic = {'a':1, 'c':2}
+dic['b']  = 3
+
+
 if __name__ == "__main__":
 
-    Music.play()
+    print(dic.items())
 
-    obj = Music()
-    obj.stop()
-
+    for key, val in dic.items():
+        print(key)

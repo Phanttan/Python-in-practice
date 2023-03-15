@@ -6,13 +6,21 @@ Created on Thu Jul 18 09:18:07 2019
 """
 
 class Student:
+    """
+    Define Student Class with property decorator
+    """
     def __init__(self, name, marks):
         self.name = name
         self.marks = marks
-        self.got_marks = self.name + ' obtained ' + self.marks + ' marks'
+        self.got_marks = f'{self.name} obtained {self.marks} marks'
 
     def got_marks1(self):
-        return print('First Round (No Using Property Decorator):' + cyan(self.name) + ' obtained ' + magenta(self.marks) + ' marks')
+        """
+        Got marks Method
+        """
+        return print(
+            f'First Round (No Using Property Decorator):{cyan(self.name)} obtained {magenta(self.marks)} marks'
+        )
 
     @property
     def got_marks2(self):
